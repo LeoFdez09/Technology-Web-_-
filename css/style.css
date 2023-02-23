@@ -514,6 +514,10 @@ footer .footer-container {
     justify-content: center;
 }
 
+.brands i {
+    cursor: pointer;
+}
+
 .brands .s {
     margin-left: 50px;
 }
