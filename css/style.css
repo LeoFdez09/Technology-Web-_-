@@ -140,7 +140,7 @@ button {
     position: relative;
     z-index: 1;
     overflow: hidden;
-    background: url(/img/man-wearing-vr-glasses-with-purple-light.jpg);
+    background: url(./img/man-wearing-vr-glasses-with-purple-light.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -512,7 +512,6 @@ footer .footer-container {
     margin-bottom: 10px;
     display: flex;
     justify-content: center;
-    color: ;
 }
 
 .brands .s {
