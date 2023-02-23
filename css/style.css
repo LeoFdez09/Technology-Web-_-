@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #fff ;
+    scroll-behavior: smooth;
+}
+
+:root {
+    overflow-x: hidden;
+}
+
+.header {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    opacity: 1;
+    transition: all .5s ease-in-out;
+}
+
+.header .nav {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.header .nav::before {
+    content: "";
+    width: 100%;
+    height: 102%;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    background: rgb(0, 0, 0, .4);
+    z-index: -1;
+}
+
+.header .nav .nav-ul {
+    display: flex;
+}
+
+.header .nav .nav-ul .li {
+    font-size: 18px;
+}
+
+.mar {
+    margin-left: 28px;
+}
+
+.header .nav .nav-ul .li .a {
+    color: #fff;
+    padding: 5px;
+    transition: all .3s ease-in-out;
+}
+
+.header .nav .nav-ul .li .a:hover {
+    color: hsl(191, 100%, 59%);
+}
+
+.active {
+    border-bottom: 2px solid hsl(243, 80%, 62%);
+}
+
+.special {
+    margin: 0;
+}
+
+button {
+    margin-top: 20px;
+    text-decoration: none;
+    position: absolute;
+    border: none;
+    font-size: 14px;
+    font-family: inherit;
+    color: #fff;
+    width: 9em;
+    height: 3em;
+    line-height: 2em;
+    text-align: center;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 300%;
+    border-radius: 30px;
+    z-index: 1;
+   }
+   
+   button:hover {
+    animation: ani 8s linear infinite;
+    border: none;
+   }
+   
+   @keyframes ani {
+    0% {
+     background-position: 0%;
+    }
+   
+    100% {
+     background-position: 400%;
+    }
+   }
+   
+   button:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+    background-size: 400%;
+    border-radius: 35px;
+    transition: 1s;
+   }
+   
+   button:hover::before {
+    filter: blur(20px);
+   }
+   
+   button:active {
+    background: linear-gradient(32deg,#03a9f4,#f441a5,#ffeb3b,#03a9f4);
+   }
+/* ------------------------------------------------ */
+
+.main-section {
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background: url(/img/man-wearing-vr-glasses-with-purple-light.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.main-section::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 110px;
+    background: linear-gradient(to top, rgb(49,30,64), transparent);
+    z-index: 1000;
+}
+
+.main-section::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgb(0, 0, 0, .7);
+}
+
+/*
+.main-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: -925px;
+    width: 1850px;
+    height: 1850px;
+    background: hsl(243, 80%, 62%);
+    z-index: -1;
+    border-radius: 50%;
+    transform: translateY(-50%);
+}
+*/
+
+.main-section-content {
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.main-section svg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    pointer-events: none;
+}
+
+.main-section-content .text-section h2 {
+    font-size: 4em;
+    margin-bottom: 15px;
+}
+
+.main-section-content .text-section p {
+    width: 500px;
+}
+
+.main-section-content .text-section .btn {
+    margin-top: 20px;
+}
+
+.main-section-content .text-section h2 span {
+    font-weight: 900;
+    color: hsl(191, 100%, 59%);
+}
+
+.main-section-content .img-section {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+
+.main-section-content .img-section img {
+    width: 800px;
+    transform: translateY(-40px);
+}
+
+.main-section-content .img-section .social-medias {
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    right: -20px;
+}
+
+.main-section-content .img-section .social-medias a {
+    margin-top: 40px;
+    transform: translateY(-40px);
+    font-size: 25px;
+    color: #fff;
+}
+
+/* ----------------------------------------------- */
+
+
+.uses {
+    background: rgb(49,30,64);
+    padding: 20px 100px;
+    position: relative;
+    height: 1000px;
+}
+
+.uses-content {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.uses-content h2 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+    font-weight: 700;
+}
+
+.uses-content .general-images {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+}
+
+.uses-content .isometric-images h2 {
+    font-weight: 500;
+}
+
+.uses-content .isometric-images img {
+    width: 400px;
+}
+
+.uses svg {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    pointer-events: none;
+}
+
+/* -------------------------------------- */
+
+.games {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    height: 1200px;
+    margin-bottom: 20px;
+}
+
+.games-content {
+    display: flex;
+    justify-content: center;
+    flex-flow: column nowrap;
+    align-items: center;
+    height: 100%;
+}
+
+.games-content .game-title {
+    color: #000;
+    font-size: 3em;
+    font-weight: 900;
+    margin-bottom: 50px;
+}
+
+.articles {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    height: 100%;
+}
+
+.articles article {
+    border: 1px solid #fff;
+    background: rgba(255, 255, 255, .7);
+    backdrop-filter: blur(4px);
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.articles article .text-container {
+    color: #000;
+    margin-left: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.articles article .text-container h2 {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.articles article .text-container h2,p {
+    color: inherit;
+    text-align: justify;
+}
+
+.articles article .img-container img {
+    width: 500px;
+}
+
+.articles .articleSpecial {
+    display: flex;
+    flex-flow: row-reverse nowrap;
+}
+
+.articles .articleSpecial .text-container {
+    margin-left: 0;
+    margin-right: 20px;
+}
+
+.articles .articleSpecial .text-container h2 {
+    align-self: flex-end;
+}
+
+/* ------------------------------------------ */
+
+.about {
+    width: 100%;
+    background: #1c1c1c;
+    padding: 50px 20px;
+}
+
+.about .about-content {
+    text-align: center;
+}
+
+.about .about-content h2{
+    font-size: 2.5em;
+}
+
+.text-area {
+    text-align: start;
+}
+
+.text-area h2 {
+    margin-bottom: 20px;
+}
+
+.about .about-content .about-title {
+    font-size: 4em;
+}
+
+.about .about-content h2 span {
+    font-size: 0.7em;
+    color: hsl(191, 100%, 59%);
+}
+
+/* ---------------------------------- */
+
+.contact {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+.contact form {
+    height: 80%;
+    width: 100%;
+}
+
+.contact h2 {
+    color: #000;
+    font-size: 4em;
+    font-weight: 900;
+}
+
+
+.contact form .form-content {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.contact form .form-content input {
+    height: 40px;
+    width: 500px;
+    border: 2px solid #000;
+    background: transparent;
+    border: 2px solid #000;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0 0 0 5px;
+    color: #000;
+    padding: 10px;
+    font-size: 1em;
+}
+
+.contact form .form-content .message textarea {
+    height: 250px;
+    width: 500px;
+    text-align: flex-start;
+    resize: none;
+    border: 2px solid #000;
+    background: transparent;
+    border: 2px solid #000;
+    outline: none;
+    border-right: none;
+    border-top: none;
+    border-radius: 0 0 0 5px;
+    color: #000;
+    font-size: 1em;
+    padding: 10px;
+}
+
+.contact form .form-content input:focus {
+    outline: none;
+}
+
+.contact form .form-content .btn input{
+    color: #fff;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 200px;
+    background-color: #00DBDE;
+    background-image: linear-gradient(90deg, #00DBDE 0%, #FC00FF 100%);
+    transition: all .3s ease;
+}
+
+.contact form .form-content .btn input:hover {
+    background-color: #009ea1;
+    background-image: linear-gradient(90deg, #009ea1 0%, #930095 100%);
+}
+
+/* ----------------------------------------- */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background: rgba(0, 0, 0, .9);
+}
+
+footer .footer-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.brands {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    color: ;
+}
+
+.brands .s {
+    margin-left: 50px;
+}
+
+.copyright {
+    text-align: center;
+}
+
+.copyright p{
+    color: rgba(216, 216, 216, 0.672);
+}
+
+.copyright .a{
+    color: rgba(216, 216, 216, 0.672);
+}
