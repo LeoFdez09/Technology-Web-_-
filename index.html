@@ -97,25 +97,20 @@
             </div>
         </div>
     </section>
-    <section class="contact" id="contact">
-        <form action="/contact.php" method="post">
-            <div class="form-content">
-                <h2>Contact</h2>
-                <div class="mail">
-                    <input name="mail" type="email" placeholder="Mail" required>
-                </div>
-                <div class="asunto">
-                    <input name="subject" type="text" placeholder="Subject" required>
-                </div>
-                <div class="message">
-                    <textarea placeholder="Message" name="message" id="texta"></textarea>
-                </div>
-                <div class="btn">
-                    <input type="submit" value="Send">
-                </div>
-            </div>
-        </form>
-    </section>
+    <form class="form">
+  
+        <label for="nome">Name:</label>
+        
+          <input type="text" class="infos" id="nome" name="nome">
+        <div class="mario"></div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+    
+          <button type="submit">Send</button>
+          <button type="reset" id="limpar">Clear</button>
+    
+    
+    </form>
     <footer>
         <div class="footer-container">
             <div class="brands">

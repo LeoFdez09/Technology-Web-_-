@@ -1,17 +1,14 @@
 <?php
 
-$to = "contactodeleo@gmail.com"
-$email = $_POST["email"];
-$subject = $_POST["subject"];
-$message = $_POST["message"];
+    $to = "2022e2afernandez.ledel@algeciras.salesianos.edu";
+    $email = $_POST["mail"];
+    $subject = $_POST["subject"];
+    $message = $_POST["message"];
 
-$cmessage = "mensaje envidado desde: " + $email + "\n" + $message;
-
-mail($to, $subject, $cmessage);
+    $header = "Enviado desde la pagina de tecnología";
 
 
-
-
+    mail($to, $subject, $message, $header);
 
 
 
