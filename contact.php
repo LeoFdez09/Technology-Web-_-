@@ -9,7 +9,7 @@
     $header = "Enviado desde la pagina de tecnología";
     $mensajeCompleto = $message . "\nAtentamente:" . $name;
 
-    mail($to, $subject, $mensajeCompleto, $header);
+    mail($to, $subject, $message, $header);
 
     
     echo "<script>alert('correo enviado exitosamente')</script>";
