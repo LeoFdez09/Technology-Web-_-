@@ -92,6 +92,11 @@
     border-radius: 30px;
     z-index: 1;
    }
+
+
+   .header-button {
+    line-height: 2em;
+   }
    
    .header-button:hover {
     animation: ani 8s linear infinite;
