@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
 
 * {
     margin: 0;
@@ -92,9 +93,6 @@
     z-index: 1;
    }
 
-
-   .header-button a{
-   }
    
    .header-button:hover {
     animation: ani 8s linear infinite;
@@ -547,7 +545,7 @@ form {
     background-color: #fcd0a1;
     border-radius: 10px;
     padding: 20px;
-    width: 300px;
+    width: 400px;
     margin: 50px auto;
   }
   
@@ -566,8 +564,25 @@ form {
     border-radius: 5px;
     border: none;
     margin-bottom: 20px;
+    color: #000;
+    font-family: 'LT Binary Neue', sans-serif;
+
   }
   
+  .textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 20px;
+    height: 200px;
+    color: #000;
+    font-family: 'LT Binary Neue', sans-serif;
+    display: flex;
+    flex-flow: column nowrap;
+  }
+
   button {
     background-color: #de5959;
     color: white;
@@ -601,7 +616,7 @@ form {
     width: 5px;
     height: 5px;
     position: relative;
-    left: 100px;
+    left: 200px;
     box-shadow: 0px 0px 0px transparent, 130px 5px #ffa500, 135px 5px #ffa500,
   140px 5px #ffa500, 95px 10px #de4513, 100px 10px #de4513, 105px 10px #de4513,
   110px 10px #de4513, 115px 10px #de4513, 130px 10px #ffa500,
