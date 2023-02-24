@@ -379,7 +379,7 @@
 .about {
     width: 100%;
     background: #1c1c1c;
-    padding: 50px 20px;
+    padding: 0px 20px;
 }
 
 .about-svg {
@@ -549,9 +549,11 @@ footer .footer-container {
 /* ----------------------------------------- */
 
 .h2-section-separation {
-    margin-top: 20px;
+    margin-top: 0px;
     width: 100%;
     display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
     justify-content: center;
 }
 
@@ -761,4 +763,8 @@ form {
 .how-enter-card p span {
     color: #4545bb;
     font-weight: 600;
+}
+
+.how-enter-svg {
+    margin-top: 50px;
 }
