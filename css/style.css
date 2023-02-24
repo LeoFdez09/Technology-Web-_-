@@ -395,6 +395,7 @@
 
 .about .about-content h2{
     font-size: 3em;
+    margin-bottom: 20px;
 }
 
 .text-area {
@@ -589,7 +590,23 @@ form {
     font-family: 'LT Binary Neue', sans-serif;
 
   }
+
+  .infos[type="text"]:hover {
+    outline: none;
+  }
+
+  .infos[type="text"]:focus {
+    outline: none;
+  }
   
+  input[type="email"]:hover {
+    outline: none;
+  }
+
+  input[type="email"]:focus {
+    outline: none;
+  }
+
   .textarea {
     width: 100%;
     padding: 10px;
