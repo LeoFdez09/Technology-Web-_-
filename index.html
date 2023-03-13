@@ -28,7 +28,9 @@
         <div class="main-section-content">
             <div class="text-section">
                 <h2>It's not just Virtual Reality<br>It's the <span>Future</span></h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto explicabo, qui repellendus dolorum impedit ducimus fugit nesciunt ut obcaecati libero maxime possimus, vitae magnam neque fuga ipsam consequuntur sunt, distinctio iusto harum alias amet porro. Sit voluptatem dolore impedit illum!</p>
+                <p>Virtual Reality (VR) refers to a technology that uses computer-generated simulations to create an immersive, three-dimensional environment that can be experienced by a user. It typically involves wearing a headset or other devices that can track the user's movements and respond to them in real-time, creating a sense of presence within the virtual environment.
+
+                VR is important to the future because it has the potential to transform many industries and aspects of our lives, including entertainment, education, healthcare, and even social interactions. </p>
                 <button class="header-button"> <a href="#uses">See more</a>
                 </button>
             </div>
@@ -124,7 +126,7 @@
                 <div class="text-area">
                     <h2>I'm <span>Leo Fernández Delgado</span>, web developer.</h2>
                     <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quibusdam rem reprehenderit minima tempore amet necessitatibus dignissimos repellendus atque? Culpa aliquam totam mollitia dolore minima alias sapiente, voluptatibus porro laborum odio doloribus, iste ut sequi cum magni, nihil aspernatur. Dolor rerum rem voluptates itaque asperiores vel omnis quidem reprehenderit esse tenetur fugiat, odit tempora officiis animi. Velit commodi, vel, voluptatibus quae porro itaque cumque alias nulla odit eos doloribus ipsa magni a earum vitae fuga ad, nihil doloremque non iste pariatur ipsum enim aperiam hic! Veritatis temporibus tenetur illo cupiditate molestiae, quaerat officiis quo modi commodi sunt. Laudantium libero fuga sed, voluptatem incidunt cupiditate odit at voluptates ipsam enim numquam doloribus, illo aperiam ipsa blanditiis dolorem laborum dignissimos natus minima, sint accusamus! Facere voluptatum delectus, provident voluptatem officiis beatae dolorum veritatis alias nisi tempore placeat, porro aperiam harum, et debitis! Eos eius soluta architecto ullam dolor totam ex a maxime quas! Inventore perferendis repellendus voluptas eaque voluptates deleniti tempore incidunt voluptatem molestiae. Commodi magnam officiis saepe, atque illo laudantium aliquam aspernatur voluptatum, obcaecati harum, debitis ex deleniti adipisci. Sed consequuntur inventore omnis, sint quos laborum illum molestiae, eum deserunt soluta neque beatae totam architecto nostrum itaque officiis fugit maiores, praesentium ratione.</p>
-                    <button class="button"> See More
+                    <button id="gitbtn" class="button"> See More
                     </button>
       
                 </div>
@@ -134,28 +136,25 @@
             </div>
         </div>
     </section>
-    <div class="waves-separation">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#000000" fill-opacity="1" d="M0,192L48,170.7C96,149,192,107,288,117.3C384,128,480,192,576,213.3C672,235,768,213,864,224C960,235,1056,277,1152,261.3C1248,245,1344,171,1392,133.3L1440,96L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <div class="contact-form">
+        <h2 id="contact-form-title">Contact</h2>
+        <form class="form">
+            <label class="lb" for="nome">Name:</label>
+            <input name="nome" id="nome" type="text" class="infos">
+            
+          <label for="email" class="lb">E-mail:</label>
+          <input name="email" id="email" type="email" class="infos">
+
+          <label for="email" class="lb">Subject:</label>
+          <input name="email" id="email" type="email" class="infos">
+            
+          <label for="message" class="lb">Message:</label>
+          <textarea class="infos" name="message" id="textarea" cols="30" rows="10"></textarea>
+            
+          <button id="send" type="submit">Send</button>
+          <button id="limpar" type="reset">Clear </button>
+        </form>
     </div>
-    <form id="contact" class="form" action="contact.php" method="POST">
-          <label for="nome">Name:</label>
-        
-          <input type="text" class="infos" id="nome" name="nome">
-          <div class="mario"></div>
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email">
-
-          <label for="subject">Subject:</label>
-          <input class="infos" type="text" id="subject" name="subject">
-
-          <label for="textarea">Message:</label>
-          <textarea class="textarea" name="textarea" id="message"></textarea>
-
-          <button class="button-contact" type="submit">Send</button>
-          <button type="reset" id="limpar">Clear</button>
-    
-    
-    </form>
     <footer>
         <div class="footer-container">
             <div class="brands">

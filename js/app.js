@@ -6,7 +6,7 @@ let games = document.getElementById("games");
 let header = document.querySelector(".header");
 let progressbar = document.getElementById("progress-bar");
 let totalHeight = document.body.scrollHeight - window.innerHeight;
-
+let button = document.getElementById("gitbtn");
 
 window.addEventListener("scroll", () => {
     let value = window.scrollY;
@@ -23,4 +23,6 @@ window.onscroll = function(){
     progressbar.style.height = progressHeight + "%"
 }
 
-
+button.addEventListener("click", () => {
+    location.href = "https://leofdez09.github.io/Portfolio/"
+})
