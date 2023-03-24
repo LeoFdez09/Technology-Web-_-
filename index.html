@@ -136,9 +136,9 @@
             </div>
         </div>
     </section>
-    <div class="contact-form">
+    <div class="contact-form" id="contact">
         <h2 id="contact-form-title">Contact</h2>
-        <form class="form">
+        <form class="form" action="contact.php" method="POST">
             <label class="lb" for="nome">Name:</label>
             <input name="nome" id="nome" type="text" class="infos">
             
@@ -146,7 +146,7 @@
           <input name="email" id="email" type="email" class="infos">
 
           <label for="email" class="lb">Subject:</label>
-          <input name="email" id="email" type="email" class="infos">
+          <input name="subject" id="email" type="email" class="infos">
             
           <label for="message" class="lb">Message:</label>
           <textarea class="infos" name="message" id="textarea" cols="30" rows="10"></textarea>
